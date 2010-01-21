@@ -2,7 +2,8 @@
 
 SSLAudit is a tool that verifies SSL certificate and supported protocols/ciphers of a SSL-enabled webserver. The result is graded according to [https://www.ssllabs.com/projects/rating-guide/index.html SSLLabs SSL Server Rating Guide].
 
-The tool is similar in function to  [http://www.foundstone.com/us/resources/proddesc/ssldigger.htm SSLDigger from Foundstone] and [http://freeworld.thc.org/root/tools/ THCSSLCheck from The Hacker Choice] but is different that it is open source and is easily modified to support new protocols and ciphers as they become available and the result is graded.
+The tool is similar in function to  [http://www.foundstone.com/us/resources/proddesc/ssldigger.htm SSLDigger from Foundstone] and [http://freeworld.thc.org/root/tools/ THCSSLCheck from The Hacker Choice] but is different that it is open source and is easily modified to support new protocols and ciphers as they become available and the result is graded. [http://sourceforge.net/projects/sslscan/ SSLScan] (with associate [http://search.cpan.org/~jabra/Sslscan-Parser-0.02/ output perl parser]) does many things similar to SSLAudit and can serve your purpose well, however it doesn't do the grading (which is a minor thing as the output is detailed and you have the perl module to parse the logfile) and I had problems getting it compile under Windows/Cygwin. SSLLabs has a [https://www.ssllabs.com/ssldb/analyze.html online service] to scan public-facing SSL-servers (but can't handle internal servers or servers with restricted internet access).
+
 
 This project is sponsored by [http://www.omegapoint.se Omegapoint AB] and was created to assist security assessments done according to [http://www.owasp.org/index.php/Category:OWASP_Testing_Project OWASP Testing Guide].
 
